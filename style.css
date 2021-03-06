@@ -1,6 +1,6 @@
 .jumbotron
 {
-    width: 100%; 
+    width: 100%;
 }
 
 a {
@@ -34,12 +34,12 @@ a {
   }
   nav ul li a {
     color: white;
-    
+
     font-size: 0.8rem;
     text-align: left;
     margin-right: 3rem;
   }
-  
+
   nav .right {
     margin-left: 5rem;
   }
@@ -53,12 +53,38 @@ a {
 }
 .jumbotron {
   height: 60vh;
+  position: relative;
 }
 .banner1{
-  background:url(images/banner1.jpg);
   width: 100%;
-  background-size: cover;
-  background-attachment: fixed;
   color: black;
 }
 
+.background-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.responsive-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0;
+}
+.responsive-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
