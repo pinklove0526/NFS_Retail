@@ -1,10 +1,11 @@
 .jumbotron
 {
-    width: 100%;
+    width: 100%; 
 }
 
 a {
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
   }
   .logo.align-self-start {
     margin-right: 5rem;
@@ -50,6 +51,7 @@ a {
       display: block;
     }
 }
+<<<<<<< HEAD
 .jumbotron {
   height: 60vh;
 }
@@ -60,3 +62,5 @@ a {
   background-attachment: fixed;
   color: black;
 }
+=======
+>>>>>>> 49cd2ccd8a24ff49225116a30e9a9c1d8dc872c9
