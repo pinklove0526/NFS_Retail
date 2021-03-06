@@ -5,6 +5,7 @@
 
 a {
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
   }
   .logo.align-self-start {
     margin-right: 5rem;
