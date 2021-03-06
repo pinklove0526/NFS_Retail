@@ -50,3 +50,13 @@ a {
       display: block;
     }
 }
+.jumbotron {
+  height: 60vh;
+}
+.banner1{
+  background:url(images/banner1.jpg);
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+}
