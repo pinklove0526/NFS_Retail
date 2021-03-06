@@ -96,6 +96,7 @@ a {
   display: grid;
   background-color: grey;
   overflow: hidden;
+  margin: 20px !important;
 
 }
 .containerNews img {
@@ -106,9 +107,22 @@ a {
 }
 .content{
   height: 100%;
+  
 }
 .content p{
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+.content h4{
+  background: black;
+  color: white;
+  width:fit-content;
+}
+.content button{
+  border-color:blue;
+  background: white;
+  color:blue;
+  border-radius:5px ; 
+  
 }
 .tile {
   height: 80vh;
