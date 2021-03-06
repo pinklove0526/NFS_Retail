@@ -110,3 +110,37 @@ a {
 .content p{
   font-size: 2.5rem;
 }
+.tile {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.tile-content {
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+.tile-content h3 {
+  color: white;
+  padding: 1rem 6.5rem;
+  font-size: 50px;
+  transition: 0.5s ease;
+}
+.tile-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tile-content h4 {
+  color: white;
+  padding: 0 6.5rem 3rem;
+  transition: 0.5s ease;
+}
+
+p {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0;
+  transition: 0.5s ease;
+}
