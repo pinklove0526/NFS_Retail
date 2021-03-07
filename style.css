@@ -257,7 +257,14 @@ p {
   font-size:13px;
   margin-bottom:0;
 }
+.p_lorem{
+  font-size:16px;
+}
 
+.ion-chatbubble
+{
+  color: white;
+}
 .item1 {
   flex-grow: 1;
   margin-top: 8rem;
