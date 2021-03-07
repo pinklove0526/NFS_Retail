@@ -982,3 +982,13 @@ p {
   background: white;
   color: black !important;
 }
+
+.btn_black:hover
+{
+  color: blue !important;
+}
+
+.btn_white:hover
+{
+  color: blue !important;
+}
