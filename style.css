@@ -117,7 +117,8 @@ a {
     opacity: 0;
 }
 /* Effect 1a */
- .hovicon.effect-1.sub-a:hover {
+ .hovicon.effect-1.sub-
+  {
     background: rgba(255, 255, 255, 1);
     color: #41ab6b;
 }
@@ -994,4 +995,14 @@ p {
 }
 .item3 {
   padding: 3rem 0 2rem 3rem;
+}
+.content a:hover {
+  color: white;
+  background: #181818;
+  transition: .5s ease;
+}
+.content a {
+  border: 1px solid #181818;
+  padding: 1rem 7rem;
+  transition: .5s ease;
 }
