@@ -257,3 +257,34 @@ p {
   font-size:13px;
   margin-bottom:0;
 }
+
+.item1 {
+  flex-grow: 1;
+  margin-top: 8rem;
+  text-align: center;
+}
+.jumbotron .container {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  height: 70vh;
+}
+.footer-dark .container {
+  display: inherit;
+}
+.item2 button {
+  margin: 0 1rem;
+  color: white;
+  height: 2.5rem;
+  border-radius: 20px;
+  border: none;
+  width: 15rem;
+}
+.btn_black {
+  background: #484848;
+}
+.btn_white {
+  background: white;
+  color: black !important;
+}
