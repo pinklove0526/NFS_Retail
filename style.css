@@ -795,10 +795,10 @@ a {
 .containerNews img {
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 100%;
-  height: 42vh;
+  width: 95%;
+  height: 50vh;
   position: relative;
-  object-fit: contain;
+  object-fit: cover;
 }
 .content{
   margin-top: 25px;
@@ -991,4 +991,7 @@ p {
 .btn_white:hover
 {
   color: blue !important;
+}
+.item3 {
+  padding: 3rem 0 2rem 3rem;
 }
