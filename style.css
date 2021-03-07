@@ -260,3 +260,8 @@ p {
 .p_lorem{
   font-size:16px;
 }
+
+.ion-chatbubble
+{
+  color: white;
+}
