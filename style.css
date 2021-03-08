@@ -740,6 +740,11 @@ a {
     {
       display: block;
     }
+
+    head
+    {
+        display: none;
+    }
 }
 .jumbotron {
   height: 85vh;
