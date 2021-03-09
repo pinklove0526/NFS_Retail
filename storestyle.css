@@ -168,3 +168,7 @@ a {
   .footer-dark .container {
     display: inherit;
   }
+  .bestSellers{
+    width: 100%;
+    display:grid;
+  }
