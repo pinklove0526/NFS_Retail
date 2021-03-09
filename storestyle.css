@@ -175,8 +175,6 @@ a {
     width: 100%;
     display:grid;
   }
-<<<<<<< Updated upstream
-
   .header {
   background-color: rgb(43, 42, 42);
   box-shadow: 1px 1px 4px 0 rgba(250, 7, 7, 0.1);
@@ -308,7 +306,76 @@ a {
     text-decoration: none;
   }
 }
+.tile-container {
+  flex-flow: nowrap;
+  padding: 0 20px;
+  display: flex;
+  margin: 0;
+  padding-top: 15px;
+}
 
+.flex-item {
+  flex: 1;
+  padding: 0 10px
+
+}
+
+.homepage-tile {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+a.tile-btn {
+  display: block;
+  transition: none;
+}
+
+.tile-wrapper {
+  height: 100%;
+  width: 100%;
+  max-height: 600px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.tile-wrapper-text {
+z-index: 2;
+left: 50%;
+bottom: auto;
+width: calc(50% + 20px);
+top: calc(50% - 29px);
+position: absolute;
+right: -20px;
+text-align: center;
+}
+
+.tile-wrapper-image img {
+  min-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 450px;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+}
+.tile-wrapper h3 {
+  position: relative;
+  margin: 0 auto 10px;
+  padding: 0;
+  color: black;
+}
+.tile-wrapper-text-light {
+z-index: 2;
+position: absolute;
+top: 50%;
+left: 45%;
+text-align: center;
+}
+.tile-wrapper-text-light h3 {
+color: white;
+}
 @media (min-width: 48em) {
   .header li {
     float: left;
@@ -326,7 +393,6 @@ a {
     display: none;
   }
 }
-
   .bestSellers img{
     height: 30vh;
   }
