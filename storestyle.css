@@ -16,9 +16,12 @@ a {
     z-index: 3;
     padding: 1.6rem 6rem;
     background-color: #181818;
+  
+  
   }
   nav .logo {
     margin-right: 3rem;
+  
   }
   nav ul {
     padding: 0;
@@ -118,6 +121,7 @@ a {
       text-align:center;
       margin-top:20px;
     }
+  
   }
   
   .footer-dark .item.social > a {
@@ -175,13 +179,13 @@ a {
     width: 100%;
     display:grid;
   }
-<<<<<<< Updated upstream
 
   .header {
   background-color: rgb(43, 42, 42);
   box-shadow: 1px 1px 4px 0 rgba(250, 7, 7, 0.1);
   position: fixed;
   width: 100%;
+  margin-bottom: 200px;
   z-index: 3;
 }
 
@@ -247,7 +251,7 @@ a {
   background: white;
   content: '';
   display: block;
-  height: 100%;
+  heiht: 100%;
   position: absolute;
   transition: all .2s ease-out;
   width: 100%;
@@ -307,9 +311,13 @@ a {
     color: white;
     text-decoration: none;
   }
+ /* .bestSellersTitle h1{
+  padding-top: 250px;
+ } */
+
 }
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
   .header li {
     float: left;
   }
@@ -325,8 +333,24 @@ a {
   .header .menu-icon {
     display: none;
   }
+  .bestSellersTitle h1{
+    padding-top: 120px ;
+   }
+  
 }
-
+@media (max-width: 768px) {
+  .bestSellersTitle h1{
+    padding-top: 50px !important;
+   }
+}
+@media (min-width: 900px) {
+  .bestSellersTitle h1{
+    padding-top: 50px !important;
+   }
+}
   .bestSellers img{
     height: 30vh;
   }
+.bestSellersTitle{
+  padding-top:70px ;
+}
