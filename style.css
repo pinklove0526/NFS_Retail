@@ -929,19 +929,9 @@ p {
     font-size: 0.8rem !important;
     text-align: center;
   }
-<<<<<<< Updated upstream
   .containerNews{
-      height:100%;
-  }
-=======
-  .containerNews {
       height: 100%;
   }
-}
-
-.footer-dark .item.text {
-  margin-bottom:36px;
->>>>>>> Stashed changes
 }
 
 .footer-dark .item.text {
@@ -963,11 +953,7 @@ p {
     text-align:center;
     margin-top:20px;
   }
-<<<<<<< HEAD
-  
-=======
->>>>>>> 25a9e90f834b02915e08516a6fea361f6170fca9
-}
+
 
 .footer-dark .item.social > a {
   font-size:20px;
@@ -1040,7 +1026,8 @@ p {
 
 .btn_white:hover
 {
-  color: blue !important;
+  color:white !important;
+  background-color: blue  !important;
 }
 .item3 {
   padding: 3rem 0 2rem 3rem;
