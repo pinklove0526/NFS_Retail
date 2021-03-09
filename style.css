@@ -929,9 +929,19 @@ p {
     font-size: 0.8rem !important;
     text-align: center;
   }
+<<<<<<< Updated upstream
   .containerNews{
       height:100%;
   }
+=======
+  .containerNews {
+      height: 100%;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+>>>>>>> Stashed changes
 }
 
 .footer-dark .item.text {
@@ -952,10 +962,6 @@ p {
   .footer-dark .item.social {
     text-align:center;
     margin-top:20px;
-  }
-  .content a{
-    font-size: 0.8rem;
-    text-align: center;
   }
 }
 
