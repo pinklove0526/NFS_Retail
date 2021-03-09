@@ -753,6 +753,14 @@ a {
         color: white;
         text-decoration: none;
     }
+    .tile-content p {
+        font-size: 1.5rem;
+    }
+    .tile-content h3 {
+        font-size: 1.8rem!important;
+    }
+    .tile-content h4 {
+        font-size: 1rem;
 }
 .jumbotron {
   height: 85vh;
