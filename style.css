@@ -1168,7 +1168,8 @@ p {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
+ 
   .header li {
     float: left;
   }
@@ -1184,4 +1185,17 @@ p {
   .header .menu-icon {
     display: none;
   }
+   .jumbotron{
+    padding-top: 120px !important;
+   }
+}
+@media (max-width: 768px) {
+  .jumbotron{
+    padding-top: 50px !important ;
+   }
+}
+@media (min-width: 900px) {
+  .jumbotron{
+    padding-top: 40px !important ;
+   }
 }
