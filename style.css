@@ -1021,6 +1021,7 @@ p {
 
 .btn_black:hover
 {
+    font-weight: bolder ;
   color: blue !important;
 }
 
