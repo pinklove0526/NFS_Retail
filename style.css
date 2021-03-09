@@ -18,6 +18,9 @@ a {
     max-width: 100%;
     vertical-align: middle;
   }
+  body{
+      position: absolute;
+  }
   body nav {
     position: relative;
     z-index: 3;
