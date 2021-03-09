@@ -311,10 +311,6 @@ a {
     color: white;
     text-decoration: none;
   }
- /* .bestSellersTitle h1{
-  padding-top: 250px;
- } */
-
 }
 
 @media (min-width: 768px) {
@@ -350,6 +346,7 @@ a {
 }
   .bestSellers img{
     height: 30vh;
+    object-fit: cover;
   }
 .bestSellersTitle{
   padding-top:70px ;
