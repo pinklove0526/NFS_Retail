@@ -820,6 +820,7 @@ a {
   position: relative;
   object-fit: cover;
 }
+
 .content{
   margin-top: 25px;
   height: 100%;
@@ -827,8 +828,12 @@ a {
 }
 .content p{
   color:black;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 2rem 0 3rem;
+}
+.content a{
+    font-size: 0.8rem;
+    text-align: center;
 }
 .content h4{
   width:fit-content;
@@ -921,6 +926,10 @@ p {
   .footer-dark .item.text {
     margin-bottom:0;
   }
+  .content a{
+    font-size: 0.8rem !important;
+    text-align: center;
+  }
 }
 
 .footer-dark .item.text p {
@@ -936,6 +945,10 @@ p {
   .footer-dark .item.social {
     text-align:center;
     margin-top:20px;
+  }
+  .content a{
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
 
