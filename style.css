@@ -987,7 +987,7 @@ p {
 .ion-chatbubble
 {
   color: white;
-    
+
     float: right;
     margin-right: 30px;
     margin-top: 25px;
@@ -1021,11 +1021,12 @@ p {
 .btn_white {
   background: white;
   color: black !important;
+  transition: 0.5s ease;
 }
 
 .btn_black:hover
 {
-    font-weight: bolder ;
+  font-weight: bolder ;
   color: blue !important;
 }
 
@@ -1033,6 +1034,7 @@ p {
 {
   color:white !important;
   background-color: blue  !important;
+  transition: 0.5s ease;
 }
 .item3 {
   padding: 3rem 0 2rem 3rem;
@@ -1169,7 +1171,7 @@ p {
 /* 48em = 768px */
 
 @media (min-width: 768px) {
- 
+
   .header li {
     float: left;
   }
