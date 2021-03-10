@@ -445,6 +445,8 @@ color: white;
   }
   .bestSellersTitle h1{
     padding-top: 120px ;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
    }
 
    .bestSellers img{
