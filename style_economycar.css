@@ -80,13 +80,20 @@ background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 	font-weight: 500;
 }
 
+.col-md-12 h2 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.col-md-12 h3 {
+  padding-bottom: 1rem ;
+}
 
 
 /* Responsive Style */
 @media (max-width: 768px) {
-	
+
 }
 
 @media (max-width: 992px) {
-	
+
 }
