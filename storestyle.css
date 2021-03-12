@@ -1,6 +1,5 @@
 
 a {
-<<<<<<< HEAD
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
@@ -29,39 +28,6 @@ nav ul {
 nav ul li {
   list-style: none;
 }
-=======
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-  }
-  .logo.align-self-start {
-    margin-right: 5rem;
-  }
-  img {
-    width: 3rem;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-  }
-  body nav {
-    position: relative;
-    z-index: 3;
-    padding: 1.6rem 6rem;
-    background-color: #181818;
-
-
-  }
-  nav .logo {
-    margin-right: 3rem;
-
-  }
-  nav ul {
-    padding: 0;
-    margin: 0;
-  }
-  nav ul li {
-    list-style: none;
-  }
->>>>>>> 829f4d19b5f6d025deac60e027ce0206e4579671
 
 nav ul li a {
   color: white;
@@ -84,7 +50,7 @@ nav .right {
   color: white;
 }
 
-<<<<<<< HEAD
+
 p {
   font-size: 1.5rem;
   color: white;
@@ -96,19 +62,11 @@ p {
   padding: 50px 0;
   color: #f0f9ff;
   background-color: #282d32;
-=======
-  p {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 0;
-    transition: 0.5s ease;
-  }
+}
 
-  .footer-dark {
-    padding:50px 0;
-    color:#f0f9ff;
-    background-color:#282d32;
-  }
+
+
+
 
   .footer-dark h3 {
     margin-top:0;
@@ -232,7 +190,7 @@ p {
   width: 100%;
   margin-bottom: 200px;
   z-index: 3;
->>>>>>> 829f4d19b5f6d025deac60e027ce0206e4579671
+
 }
 
 .footer-dark h3 {
@@ -427,8 +385,7 @@ a.tile-btn {
   color: white;
 }
 
-<<<<<<< HEAD
-=======
+
 .tile-container {
   flex-flow: nowrap;
   padding: 0 20px;
@@ -509,7 +466,7 @@ text-align: center;
 color: white;
 }
 
->>>>>>> 829f4d19b5f6d025deac60e027ce0206e4579671
+
 .tile-container1 {
   flex-flow: row wrap;
   display: flex;
@@ -520,11 +477,7 @@ color: white;
 .tile-wrapper-text-dark {
   z-index: 2;
   position: absolute;
-<<<<<<< HEAD
   left: 45%;
-=======
-  left: 40%;
->>>>>>> 829f4d19b5f6d025deac60e027ce0206e4579671
   top: 18%;
   text-align: center;
 }
@@ -547,15 +500,11 @@ color: white;
 .homepage-tile-large .tile-wrapper-text-dark {
   top: 30%;
 }
-<<<<<<< HEAD
+
 @media screen and (max-width: 900px) {
   * {
-=======
-@media screen and (max-width: 900px)
-{
-  *
-  {
->>>>>>> 829f4d19b5f6d025deac60e027ce0206e4579671
+
+
     display: block;
   }
 
@@ -587,7 +536,7 @@ color: white;
   .header .menu-icon {
     display: none;
   }
-<<<<<<< HEAD
+
   .bestSellersTitle h1 {
     padding-top: 20px;
     text-align: center;
@@ -620,35 +569,3 @@ color: white;
 }
 @media (max-width: 430px) {
 } */
-=======
-  .bestSellersTitle h1{
-    padding-top: 120px ;
-    padding-left: 3rem;
-    padding-bottom: 2rem;
-   }
-
-   .bestSellers img{
-     width: 100%;
-   }
-}
-@media (max-width: 768px) {
-  .bestSellersTitle h1{
-    padding-top: 50px !important;
-   }
-}
-@media (min-width: 900px) {
-  .bestSellersTitle h1{
-    padding-top: 50px !important;
-   }
-}
-  .bestSellers img{
-    height: 30vh;
-    object-fit: cover;
-  }
-.bestSellersTitle{
-  padding-top:70px ;
-}
-@media (max-width: 430px) {
-
-}
->>>>>>> 829f4d19b5f6d025deac60e027ce0206e4579671
