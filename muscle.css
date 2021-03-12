@@ -186,13 +186,21 @@ img {
     height: 100%;
     color: white;
   }
-  @media (max-width: 1040px){
+  @media (min-width: 1040px){
     body{
-      
+        width:100%;
+       
     }    
-  }
-  @media (min-width: 576px){
+}
+@media (max-width: 576px){
     body{
         width: 100%;
+        
     }    
-  }
+}
+@media (min-width: 577px){
+    body{
+        position:absolute;
+        
+    }    
+}
