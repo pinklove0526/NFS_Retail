@@ -383,7 +383,7 @@ color: white;
 .tile-wrapper-text-dark {
   z-index: 2;
   position: absolute;
-  left: 45%;
+  left: 40%;
   top: 18%;
   text-align: center;
 }
