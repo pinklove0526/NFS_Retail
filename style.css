@@ -401,7 +401,7 @@ p {
 .ion-chatbubble
 {
   color: white;
-    
+
     float: right;
     margin-right: 30px;
     margin-top: 25px;
@@ -435,11 +435,12 @@ p {
 .btn_white {
   background: white;
   color: black !important;
+  transition: 0.5s ease;
 }
 
 .btn_black:hover
 {
-    font-weight: bolder ;
+  font-weight: bolder ;
   color: blue !important;
 }
 
@@ -447,6 +448,7 @@ p {
 {
   color:white !important;
   background-color: blue  !important;
+  transition: 0.5s ease;
 }
 .item3 {
   padding: 3rem 0 2rem 3rem;
@@ -467,3 +469,152 @@ p {
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+/* header */
+
+.header {
+  background-color: rgb(43, 42, 42);
+  box-shadow: 1px 1px 4px 0 rgba(250, 7, 7, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgb(43, 42, 42);
+}
+
+.header li a {
+
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color:blue !important;
+
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  margin-top: 25px;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 35px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 768px) {
+
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+    margin-right:120px;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+   .jumbotron{
+    padding-top: 120px !important;
+   }
+}
+@media (max-width: 768px) {
+  .jumbotron{
+    padding-top: 50px !important ;
+   }
+}
+@media (min-width: 900px) {
+  .jumbotron{
+    padding-top: 40px !important ;
+   }
+}
+>>>>>>> 829f4d19b5f6d025deac60e027ce0206e4579671
