@@ -70,6 +70,39 @@ img {
     opacity:0.8;
   }
 
+  .item1 {
+    flex-grow: 1;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .item2 button {
+    margin: 0 1rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: none;
+    width: 15rem;
+  }
+
+.btn_black {
+  background: #484848;
+  color: white;
+}
+.btn_white:hover {
+  background: blue;
+  color: white;
+  transition: .5s ease;
+}
+.btn_white {
+  transition: .5s ease;
+}
+
+.btn_black:hover {
+  color: blue;
+  transition: .3s ease;
+}
+.btn_black {
+  transition: .3s ease;
+}
   @media (max-width:767px) {
     .footer-dark .item:not(.social) {
       text-align:center;
