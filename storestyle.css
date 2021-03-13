@@ -380,15 +380,6 @@ a.tile-btn {
   color: white;
 }
 
-
-.tile-container {
-  flex-flow: nowrap;
-  padding: 0 20px;
-  display: flex;
-  margin: 0;
-  padding-top: 15px;
-}
-
 .flex-item {
   flex: 1;
   padding: 0 10px
