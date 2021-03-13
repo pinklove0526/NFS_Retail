@@ -221,19 +221,16 @@ img {
   }
   .tile-container {
     flex-flow: nowrap;
-    padding: 0 20px;
     display: flex;
     margin: 0;
-    padding-top: 15px;
+    height: 70vh;
   }
 
   .flex-item {
     flex: 1;
-    padding: 0 10px;
   }
 
   .homepage-tile {
-    margin-bottom: 20px;
     position: relative;
   }
 
@@ -251,13 +248,16 @@ img {
 
   .tile-wrapper-text-left {
     z-index: 2;
-    left: 50%;
     bottom: auto;
-    width: calc(50% + 20px);
-    top: calc(50% - 29px);
+    width: 100%;
+    top: calc(50% - 339px);
     position: absolute;
-    right: -20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
     text-align: center;
+    transition: .5s ease;
   }
   .tile-wrapper-text-right {
     z-index: 2;
@@ -270,23 +270,6 @@ img {
     text-align: center;
   }
 
-  .tile-wrapper-image img {
-    min-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 450px;
-    object-fit: cover;
-    overflow: hidden;
-    object-position: center;
-  }
-  .tile-wrapper h3 {
-    position: relative;
-    margin: 0 auto 10px;
-    padding: 0;
-    color: black;
-  }
   .tile-wrapper-text-light {
     z-index: 2;
     position: absolute;
@@ -298,17 +281,6 @@ img {
     color: white;
   }
 
-  .flex-item {
-    flex: 1;
-    padding: 0 10px
-
-  }
-
-  .homepage-tile {
-    margin-bottom: 20px;
-    position: relative;
-  }
-
   a.tile-btn {
     display: block;
     transition: none;
@@ -317,29 +289,8 @@ img {
   .tile-wrapper {
     height: 100%;
     width: 100%;
-    max-height: 600px;
+    max-height: 700px;
     margin: 0;
-  }
-
-  .tile-wrapper-text-left {
-  z-index: 2;
-  left: 50%;
-  bottom: auto;
-  width: calc(50% + 20px);
-  top: calc(50% - 29px);
-  position: absolute;
-  right: -20px;
-  text-align: center;
-  }
-  .tile-wrapper-text-right {
-  z-index: 2;
-  right: 50%;
-  bottom: auto;
-  width: calc(50% + 20px);
-  top: calc(50% - 29px);
-  position: absolute;
-  left: -20px;
-  text-align: center;
   }
 
   .tile-wrapper-image img {
@@ -348,7 +299,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 450px;
+    height: 70vh;
     object-fit: cover;
     overflow: hidden;
     object-position: center;
@@ -358,16 +309,6 @@ img {
     margin: 0 auto 10px;
     padding: 0;
     color: black;
-  }
-  .tile-wrapper-text-light {
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  text-align: center;
-  }
-  .tile-wrapper-text-light h3 {
-  color: white;
   }
 
 
@@ -404,6 +345,24 @@ img {
   .homepage-tile-large .tile-wrapper-text-dark {
     top: 30%;
   }
+
+.list-group.list-group-flush {
+  background: none;
+  width: 100%;
+}
+.list-group-item {
+  background: none;
+  text-align: initial;
+  border: 1px solid white;
+  color: white;
+  height: 6rem;
+  font-size: 25px;
+}
+
+.tile-wrapper-text-left:hover {
+  opacity: 1;
+  transition: .5s ease;
+}
   @media (min-width: 1040px){
     body{
         width:100%;
