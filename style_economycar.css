@@ -276,6 +276,9 @@ nav ul li a {
 .p_lorem {
   color: white;
 }
+.navbar.navbar-dark.bg-dark.navbar-expand-sm {
+  background: #212529 !important;
+}
   @media (min-width: 1040px){
     body{
         width:100%;
