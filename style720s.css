@@ -199,7 +199,7 @@ a {
   }
   .jumbotron .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: column nowrap;
     justify-content: flex-start;
     height: 75vh;
@@ -236,3 +236,66 @@ a {
     background-color: blue  !important;
     transition: 0.5s ease;
   }
+  .jumbotron h1{
+      text-align: start;
+      font-size:5rem ;
+      padding-left: 3rem;
+  }
+  .jumbotron h2{
+    text-align: start;
+    font-size:7rem ;
+    padding-left: 3rem;
+}
+
+@media (max-width:575px)
+{
+    .jumbotron h1{
+        text-align: start;
+        font-size:3rem ;
+     
+    }
+    .jumbotron h2{
+      text-align: start;
+      font-size:5rem ;
+ 
+  }
+}
+@media (max-width:376px)
+{
+    .jumbotron h1{
+        text-align: start;
+        font-size:3rem ;
+     
+    }
+    .jumbotron h2{
+      text-align: start;
+      font-size:4.5rem ;
+ 
+  }
+}
+@media (max-width:376px)
+{
+    .jumbotron h1{
+        text-align: start;
+        font-size:2rem ;
+     
+    }
+    .jumbotron h2{
+      text-align: start;
+      font-size: 4rem;
+ 
+  }
+}
+@media (max-width:374px)
+{
+    .jumbotron h1{
+        text-align: start;
+        font-size:2rem ;
+     
+    }
+    .jumbotron h2{
+      text-align: start;
+      font-size: 3.2rem;
+ 
+  }
+}
