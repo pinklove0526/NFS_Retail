@@ -243,10 +243,29 @@ a {
   }
   .jumbotron h2{
     text-align: start;
-    font-size:7rem ;
+    font-size:8rem ;
     padding-left: 3rem;
+    margin-bottom: 4rem;
 }
 
+.info{
+    width: 100%;
+    display:flex;
+    padding-left: 3rem;
+}
+.info h3{
+    font-size: 3rem;
+}
+.topspeed{
+    margin-left:5rem;
+}
+
+.accel{
+    margin-left:5rem;
+}
+
+
+/* reponsive */
 @media (max-width:575px)
 {
     .jumbotron h1{
@@ -296,6 +315,6 @@ a {
     .jumbotron h2{
       text-align: start;
       font-size: 3.2rem;
- 
   }
 }
+/* reponsive end*/
