@@ -251,10 +251,12 @@ a {
 .info{
     width: 100%;
     display:flex;
-    padding-left: 3rem;
+    padding-top: 7rem;
+    padding-left: 5rem;
+    
 }
 .info h3{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .topspeed{
     margin-left:5rem;
@@ -277,8 +279,12 @@ a {
       text-align: start;
       font-size: 5rem;
   }
+  .info{
+    padding-top: 2rem;
+  }
   .info h3{
     font-size: 2.8rem;
+    
 }
 
 }
