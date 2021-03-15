@@ -263,8 +263,8 @@ img {
     z-index: 2;
     right: 50%;
     bottom: auto;
-    width: calc(50% + 20px);
-    top: calc(50% - 29px);
+    width: calc(50% - 35px);
+    top: calc(50% - 200px);
     position: absolute;
     left: -20px;
     text-align: center;
@@ -313,9 +313,10 @@ img {
   }
   .tile-wrapper h3 {
     position: relative;
-    margin: 60px auto 0;
+    margin: 0px auto 0;
     padding: 0;
     color: black;
+    text-align: center;
     font-size: 3rem;
   }
 
@@ -363,7 +364,7 @@ img {
   text-align: initial;
   border: 1px solid black;
   color: black;
-  height: 6rem;
+  height: 100%;
   font-size: 25px;
   text-align: center;
 }
@@ -381,7 +382,12 @@ img {
 @media (max-width: 576px){
     body{
         width: 100%;
-
+    }
+    h3 {
+      font-size: 20px!important;
+    }
+    .list-group-item {
+      font-size: 10px!important;
     }
 }
 @media (min-width: 577px){
