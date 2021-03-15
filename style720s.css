@@ -337,3 +337,26 @@ a {
   }
 }
 /* reponsive end*/
+
+
+/* overview */
+
+.container-overview{
+  width: 100%;
+  display: grid;
+  height: fit-content;
+}
+
+.container-overview img{
+  width: 100%;
+}
+.container-overview para{
+  font-style: bolder  ;
+}
+
+.container-overview h1{
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* overview */
