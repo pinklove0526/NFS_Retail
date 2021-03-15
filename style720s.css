@@ -436,6 +436,10 @@ ul.list-group.list-group-flush {
 }
 li.list-group-item {
   display: flex;
+  border-left: none;
+  border-right: none;
+  align-items: center;
+  padding: 1.2rem;
 }
 .list-group-item h2 {
   margin-left: 25rem;
