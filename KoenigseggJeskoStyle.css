@@ -236,3 +236,25 @@ a {
     background-color: blue  !important;
     transition: 0.5s ease;
   }
+
+  .info
+  {
+    width: 100%;
+    display: flex;
+    padding-left: 3rem;
+  }
+
+  .info h3
+  {
+    font-size: 3rem;
+  }
+
+  .topspeed
+  {
+    margin-left: 5rem;
+  }
+
+  .accel
+  {
+    margin-left: 5rem;
+  }
