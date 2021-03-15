@@ -360,3 +360,49 @@ a {
 }
 
 /* overview */
+
+
+/* exeriror */
+
+.container-exterior{
+  width: 100%;
+  display: grid;
+  height: fit-content;
+}
+
+.container-exterior img{
+  width: 100%;
+}
+.container-exterior para{
+  font-style: bolder  ;
+}
+
+.container-exterior h1{
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+/* exeriror */
+
+/* interior */
+
+.container-interior{
+  width: 100%;
+  display: grid;
+  height: fit-content;
+}
+
+.container-interior img{
+  width: 100%;
+}
+.container-interior para{
+  font-style: bolder  ;
+}
+
+.container-interior h1{
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* interior */
