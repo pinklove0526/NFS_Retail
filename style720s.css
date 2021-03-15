@@ -266,6 +266,23 @@ a {
 
 
 /* reponsive */
+@media (max-width:1135px)
+{
+    .jumbotron h1{
+        text-align: start;
+        font-size:3rem ;
+     
+    }
+    .jumbotron h2{
+      text-align: start;
+      font-size: 5rem;
+  }
+  .info h3{
+    font-size: 2.8rem;
+}
+
+}
+
 @media (max-width:575px)
 {
     .jumbotron h1{
@@ -275,9 +292,11 @@ a {
     }
     .jumbotron h2{
       text-align: start;
-      font-size:5rem ;
- 
+      font-size: 4rem ;
   }
+  .info h3{
+    font-size: 2.5rem;
+}
 }
 @media (max-width:376px)
 {
@@ -288,7 +307,7 @@ a {
     }
     .jumbotron h2{
       text-align: start;
-      font-size:4.5rem ;
+      font-size:3.8rem ;
  
   }
 }
