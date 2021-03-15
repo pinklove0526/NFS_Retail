@@ -237,6 +237,30 @@ a {
     transition: 0.5s ease;
   }
 
+  .jumbotron .container
+  {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    height: 75vh;
+  }
+
+  .jumbotron h1
+  {
+    text-align: start;
+    font-size: 5rem;
+    padding-left: 3rem;
+  }
+
+  .jumbotron h2
+  {
+    text-align: start;
+    font-size: 4rem;
+    padding-left: 3rem;
+    margin-bottom: 4rem;
+  }
+
   .info
   {
     width: 100%;
