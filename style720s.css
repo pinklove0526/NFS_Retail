@@ -354,13 +354,18 @@ a {
 }
 /* reponsive end*/
 
-
+.row {
+  width: 100%;
+ 
+}
 /* overview */
 
 .container-overview{
   width: 100%;
   display: grid;
   height: fit-content;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
 }
 
 .container-overview img{
@@ -384,6 +389,7 @@ a {
   width: 100%;
   display: grid;
   height: fit-content;
+  padding-left: 1.5rem;
 }
 
 .container-exterior img{
@@ -407,6 +413,7 @@ a {
   width: 100%;
   display: grid;
   height: fit-content;
+  padding-left: 1.5rem;
 }
 
 .container-interior img{
