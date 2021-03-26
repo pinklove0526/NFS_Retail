@@ -549,6 +549,9 @@ color: white;
   height: 80vh;
   transition: .5s ease;
 }
+body {
+  overflow-x: hidden;
+}
 /* @media (min-width: 900px) {
   .bestSellersTitle h1 {
     padding-top: 50px !important;
