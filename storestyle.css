@@ -462,7 +462,6 @@ color: white;
 }
 .tile-wrapper-text-dark {
   z-index: 2;
-  position: absolute;
   left: 45%;
   top: 18%;
   text-align: center;
@@ -484,7 +483,7 @@ color: white;
   display: block;
 }
 .homepage-tile-large .tile-wrapper-text-dark {
-  top: 30%;
+  padding: 5rem 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -551,6 +550,18 @@ color: white;
 }
 body {
   overflow-x: hidden;
+}
+
+.homepage-tile-large .tile-wrapper {
+  height: 12rem;
+  position: absolute;
+}
+
+.homepage-2-tile .tile-wrapper {
+  position: absolute;
+}
+.homepage-2-tile .tile-wrapper-text-dark {
+  padding-top: 5rem;
 }
 /* @media (min-width: 900px) {
   .bestSellersTitle h1 {
