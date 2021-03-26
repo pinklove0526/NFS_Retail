@@ -7,7 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- ionicons CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -18,13 +21,13 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="storestyle.css">
 
-    <title>Final</title>
+    <title>Supercars</title>
   </head>
 
   <body>
 
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
-  <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+  <a href="index.html" class="logo"><img src="images/7070734980154917888_1.png" alt=""></a>
   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -54,8 +57,6 @@
     </ul>
   </div>
 </nav>
-
-
     <div class="bestSellersTitle">
       <h1>Best Sellers</h1>
     </div>
@@ -99,22 +100,37 @@
         </div>
     </div>
   </div>
-    <div class="tile-container">
-      <div class="flex-item">
-        <div class="homepage-tile">
-          <a class="tile-btn" href="#">
-            <div class="tile-wrapper">
-              <div class="tile-wrapper-text-left">
-                <h3>Car name</h3>
-              </div>
-              <div class="tile-wrapper-image">
-                <img src="images/models.jpg" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
+  <div class="tile-container">
+    <div class="flex-item">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdn.motor1.com/images/mgl/BqokA/s1/2020-ford-mustang-shelby-gt500-front-quarter.jpg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-dodge-challenger-mmp-1-1599685173.jpg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-jaguar-f-type-p300-coupe-102-1581221507.jpg?crop=0.804xw:0.603xh;0.127xw,0.212xh&resize=1200:*" alt="New York" width="1100" height="500">
       </div>
     </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    </div>
+    </div>
+  </div>
     <div class="tile-container">
       <div class="flex-item">
         <div class="homepage-tile">
@@ -165,7 +181,7 @@
       <div class="flex-item">
         <div class="homepage-tile-large">
           <div class="homepage-tile">
-            <a href="#" class="tile-btn">
+            <a href="McLaren720s.html" class="tile-btn">
               <div class="tile-wrapper">
                 <div class="tile-wrapper-text-dark">
                   <h3>McLaren 720S Spider</h3>
@@ -272,5 +288,3 @@
   </body>
 
 </html>
-
-
