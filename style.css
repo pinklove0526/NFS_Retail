@@ -15,7 +15,7 @@ a {
     vertical-align: middle;
   }
   body nav {
-    position: relative;
+    position: fixed;
     z-index: 3;
     padding: 1.6rem 6rem;
     background-color: #181818;
