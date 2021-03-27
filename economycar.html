@@ -1,336 +1,564 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Title</title>
+    <link rel="stylesheet" href="AJAX_style.css" />
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style_economycar.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style_economycar.css" />
 
-     <!-- ionicons CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- ionicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
 
-     <!-- Google fonts -->
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-  <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
-  <a href="index.html" class="logo"><img src="images/7070734980154917888_1.png" alt=""></a>
-  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbar-list-2">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="store.html">SUPERCARS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="muscle.html">AMERICAN BADASS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="economycar.html">ECONOMY</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">PRE-OWNED</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">DEALERSHIPS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">MUSEUMS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">STORE</a>
-      </li>
-    </ul>
-  </div>
-  </nav>
-  <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>All vehicles</h2>
-            <h3>SUVs & Crossovers</h3>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-item">
-              <a href="car-details.html"><img src="images/ecosport.png" alt=""></a>
-              <div class="down-content">
-                <a href="car-details.html"><h4>2021 ECOSPORT</h4></a>
-                <h6><small><del> $25,000</del></small> $19,995</h6>
-                <p>166 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New vehicle</p>
-                <small>
-                  <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                </small>
-              </div>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+      <a href="index.html" class="logo"
+        ><img src="images/7070734980154917888_1.png" alt=""
+      /></a>
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar-list-2"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-list-2">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">SUPERCARS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="muscle.html">AMERICAN BADASS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="economycar.html">ECONOMY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRE-OWNED</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">DEALERSHIPS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MUSEUMS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">STORE</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="myBtnContainer">
+        <br>
+        <button class="btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+        <button class="btn" onclick="filterSelection('suv')">
+          SUVs & Crossovers
+        </button>
+        <button class="btn" onclick="filterSelection('trucks')">
+          Trucks & Vans
+        </button>
+        <button class="btn" onclick="filterSelection('sedans')">
+          Sedans
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>All vehicles</h2>
+          <!-- <h3>SUVs & Crossovers</h3> -->
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv suv">
+            <a href="car-details.html"
+              ><img src="images/ecosport.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 ECOSPORT</h4></a>
+              <h6 id="price"></h6>
+              <p>
+                166 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-item">
-              <a href="car-details.html"><img src="images/escape.png" alt=""></a>
-              <div class="down-content">
-                <a href="car-details.html"><h4>2020 ESCAPE</h4></a>
-                <h6><small><del> $29,320</del></small> $24,885</h6>
-                <p>190 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New vehicle</p>
-                <small>
-                  <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                </small>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv suv">
+            <a href="car-details.html"
+              ><img src="images/escape.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2020 ESCAPE</h4></a>
+              <h6 id="price2"></h6>
+              <p>
+                190 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-item">
-              <a href="car-details.html"><img src="images/broncosport.png" alt=""></a>
-              <div class="down-content">
-                <a href="car-details.html"><h4>2021 BRONCO SPORT</h4></a>
-                <h6><small><del> $30,000</del></small> $26,820</h6>
-                <p>245 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New vehicle</p>
-                <small>
-                  <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                </small>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv suv">
+            <a href="car-details.html"
+              ><img src="images/broncosport.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 BRONCO SPORT</h4></a>
+              <h6 id="price3"></h6>
+              <p>
+                245 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-item">
-              <a href="car-details.html"><img src="images/edge.png" alt=""></a>
-              <div class="down-content">
-                <a href="car-details.html"><h4>2020 EDGE</h4></a>
-                <h6><small><del> $26,500</del></small> $24,410</h6>
-                <p>270 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New vehicle</p>
-                <small>
-                  <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                </small>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv suv">
+            <a href="car-details.html"><img src="images/edge.png" alt="" /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2020 EDGE</h4></a>
+              <h6 id="price4"></h6>
+              <p>
+                270 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-item">
-              <a href="car-details.html"><img src="images/explorer.png" alt=""></a>
-              <div class="down-content">
-                <a href="car-details.html"><h4>2021 EXPLORER</h4></a>
-                <h6><small><del> $35,500</del></small> $32,450</h6>
-                <p>300 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New vehicle</p>
-                <small>
-                  <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                </small>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv suv">
+            <a href="car-details.html"
+              ><img src="images/explorer.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 EXPLORER</h4></a>
+              <h6 id="price5"></h6>
+              <p>
+                300 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-item">
-              <a href="car-details.html"><img src="images/mustangmache.png" alt=""></a>
-              <div class="down-content">
-                <a href="car-details.html"><h4>2021 MUSTANG MACH-E</h4></a>
-                <h6><small><del> $43,000</del></small> $42,895</h6>
-                <p>480 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New vehicle</p>
-                <small>
-                  <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="icon ion-gear-b"></i> Manual</strong>
-                </small>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv suv">
+            <a href="car-details.html"
+              ><img src="images/mustangmache.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 MUSTANG MACH-E</h4></a>
+              <h6 id="price6"></h6>
+              <p>
+                480 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Manual</strong
+                >
+              </small>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-item">
-              <a href="car-details.html"><img src="images/expedition.png" alt=""></a>
-              <div class="down-content">
-                <a href="car-details.html"><h4>2021 EXPEDITION</h4></a>
-                <h6><small><del> $50,000</del></small> $49,995</h6>
-                <p>400 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; Used vehicle</p>
-                <small>
-                  <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                </small>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv suv">
+            <a href="car-details.html"
+              ><img src="images/expedition.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 EXPEDITION</h4></a>
+              <h6 id="price7"></h6>
+              <p>
+                400 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; Used
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Trucks & Vans</h2>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="product-item">
-                  <a href="car-details.html"><img src="images/2020-ranger-small.png" alt=""></a>
-                  <div class="down-content">
-                    <a href="car-details.html"><h4>2020 RANGER</h4></a>
-                    <h6><small><del> $25,000</del></small> $19,995</h6>
-                    <p>166 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New vehicle</p>
-                    <small>
-                      <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                    </small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="product-item">
-                  <a href="car-details.html"><img src="images/2021-ranger-small.png" alt=""></a>
-                  <div class="down-content">
-                    <a href="car-details.html"><h4>2021 RANGER</h4></a>
-                    <h6><small><del> $26,800</del></small> $24,820</h6>
-                    <p>270 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New vehicle</p>
-                    <small>
-                      <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                    </small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="product-item">
-                  <a href="car-details.html"><img src="images/transitconnect.png" alt=""></a>
-                  <div class="down-content">
-                    <a href="car-details.html"><h4>2021 TRANSIT CONNECT</h4></a>
-                    <h6><small><del> $30,000</del></small> $27,400</h6>
-                    <p>162 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New vehicle</p>
-                    <small>
-                      <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                    </small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="product-item">
-                  <a href="car-details.html"><img src="images/f150.png" alt=""></a>
-                  <div class="down-content">
-                    <a href="car-details.html"><h4>2021 F-150</h4></a>
-                    <h6><small><del> $32,500</del></small> $28,940</h6>
-                    <p>400 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New vehicle</p>
-                    <small>
-                      <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                    </small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="product-item">
-                  <a href="car-details.html"><img src="images/explorerpickup.png" alt=""></a>
-                  <div class="down-content">
-                    <a href="car-details.html"><h4>2021 EXPLORER</h4></a>
-                    <h6><small><del> $38,000</del></small> $34,230</h6>
-                    <p>475 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New vehicle</p>
-                    <small>
-                      <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                    </small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="product-item">
-                  <a href="car-details.html"><img src="images/transit.png" alt=""></a>
-                  <div class="down-content">
-                    <a href="car-details.html"><h4>2020 TRANSIT</h4></a>
-                    <h6><small><del> $45,000</del></small> $40,180</h6>
-                    <p>295 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New vehicle</p>
-                    <small>
-                      <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                      <strong title="Views"><i class="icon ion-gear-b"></i> Manual</strong>
-                    </small>
-                  </div>
-                </div>
-              </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <h2>Trucks & Vans</h2> -->
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv trucks">
+            <a href="car-details.html"
+              ><img src="images/2020-ranger-small.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2020 RANGER</h4></a>
+              <h6 id="price8"></h6>
+              <p>
+                166 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
             </div>
           </div>
-          <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h2>Sedans</h2>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="product-item">
-                      <a href="car-details.html"><img src="images/fusion.png" alt=""></a>
-                      <div class="down-content">
-                        <a href="car-details.html"><h4>2020 FUSION</h4></a>
-                        <h6><small><del> $25,000</del></small> $23,170</h6>
-                        <p>181 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New vehicle</p>
-                        <small>
-                          <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                          <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="product-item">
-                      <a href="car-details.html"><img src="images/fusion.png" alt=""></a>
-                      <div class="down-content">
-                        <a href="car-details.html"><h4>2020 FUSION HYBRID</h4></a>
-                        <h6><small><del> $30,000</del></small> $28,000</h6>
-                        <p>188 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New vehicle</p>
-                        <small>
-                          <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                          <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="product-item">
-                      <a href="car-details.html"><img src="images/fusion.png" alt=""></a>
-                      <div class="down-content">
-                        <a href="car-details.html"><h4>2020 FUSION ENERGI</h4></a>
-                        <h6><small><del> $40,000</del></small> $35,000</h6>
-                        <p>141 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New vehicle</p>
-                        <small>
-                          <strong title="Author"><i class="icon ion-speedometer"></i> 0km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
-                          <strong title="Views"><i class="icon ion-gear-b"></i> Auto</strong>
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- footer start -->
-      <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Support customer service</h3>
-                        <ul>
-                            <li><a href="#">Privacy & Legal</a></li>
-                            <li><a href="#">Frequently asked questions</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Media center</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p class="p_lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cupiditate vero dolores saepe neque labore impedit earum incidunt mollitia, deleniti odit fugiat quibusdam recusandae voluptates.</p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ad quasi cum dolore culpa?</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv trucks">
+            <a href="car-details.html"
+              ><img src="images/2021-ranger-small.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 RANGER</h4></a>
+              <h6 id="price9"></h6>
+              <p>
+                270 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
             </div>
-        </footer>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv trucks">
+            <a href="car-details.html"
+              ><img src="images/transitconnect.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 TRANSIT CONNECT</h4></a>
+              <h6 id="price10"></h6>
+              <p>
+                162 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv trucks">
+            <a href="car-details.html"><img src="images/f150.png" alt="" /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 F-150</h4></a>
+              <h6 id="price11"></h6>
+              <p>
+                400 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv trucks">
+            <a href="car-details.html"
+              ><img src="images/explorerpickup.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2021 EXPLORER</h4></a>
+              <h6 id="price12"></h6>
+              <p>
+                475 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2021 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv trucks">
+            <a href="car-details.html"
+              ><img src="images/transit.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2020 TRANSIT</h4></a>
+              <h6 id="price13"></h6>
+              <p>
+                295 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Manual</strong
+                >
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <h2>Sedans</h2> -->
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv sedans">
+            <a href="car-details.html"
+              ><img src="images/fusion.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2020 FUSION</h4></a>
+              <h6 id="price14"></h6>
+              <p>
+                181 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv sedans">
+            <a href="car-details.html"
+              ><img src="images/fusion.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2020 FUSION HYBRID</h4></a>
+              <h6 id="price15"></h6>
+              <p>
+                188 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-item filterDiv sedans">
+            <a href="car-details.html"
+              ><img src="images/fusion.png" alt=""
+            /></a>
+            <div class="down-content">
+              <a href="car-details.html"><h4>2020 FUSION ENERGI</h4></a>
+              <h6 id="price16"></h6>
+              <p>
+                141 hp &nbsp;/&nbsp; Gas &nbsp;/&nbsp; 2020 &nbsp;/&nbsp; New
+                vehicle
+              </p>
+              <small>
+                <strong title="Author"
+                  ><i class="icon ion-speedometer"></i> 0km</strong
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <strong title="Views"
+                  ><i class="icon ion-gear-b"></i> Auto</strong
+                >
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer start -->
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Support customer service</h3>
+              <ul>
+                <li><a href="#">Privacy & Legal</a></li>
+                <li><a href="#">Frequently asked questions</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Media center</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3>Company Name</h3>
+              <p class="p_lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores cupiditate vero dolores saepe neque labore impedit
+                earum incidunt mollitia, deleniti odit fugiat quibusdam
+                recusandae voluptates.
+              </p>
+            </div>
+            <div class="col item social">
+              <a href="#"><i class="icon ion-social-facebook"></i></a
+              ><a href="#"><i class="icon ion-social-twitter"></i></a
+              ><a href="#"><i class="icon ion-social-snapchat"></i></a
+              ><a href="#"><i class="icon ion-social-instagram"></i></a>
+            </div>
+          </div>
+          <p class="copyright">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            ad quasi cum dolore culpa?
+          </p>
+        </div>
+      </footer>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="AJAX_main.js" type="text/javascript"></script>
   </body>
 </html>
